@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>语法 | 前端代码规范</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    
+    <meta name="description" content="前端指导，代码规范">
+    
+    <link rel="preload" href="/front-code-guide/assets/css/0.styles.672f195a.css" as="style"><link rel="preload" href="/front-code-guide/assets/js/app.2f269a68.js" as="script"><link rel="preload" href="/front-code-guide/assets/js/2.faec8797.js" as="script"><link rel="preload" href="/front-code-guide/assets/js/8.ae937d46.js" as="script"><link rel="prefetch" href="/front-code-guide/assets/js/10.74399594.js"><link rel="prefetch" href="/front-code-guide/assets/js/11.e88db677.js"><link rel="prefetch" href="/front-code-guide/assets/js/12.32bf4dca.js"><link rel="prefetch" href="/front-code-guide/assets/js/3.f1a138f4.js"><link rel="prefetch" href="/front-code-guide/assets/js/4.6507b1ee.js"><link rel="prefetch" href="/front-code-guide/assets/js/5.85f45329.js"><link rel="prefetch" href="/front-code-guide/assets/js/6.6b2cbcba.js"><link rel="prefetch" href="/front-code-guide/assets/js/7.2c177419.js"><link rel="prefetch" href="/front-code-guide/assets/js/9.0ad13fa3.js">
+    <link rel="stylesheet" href="/front-code-guide/assets/css/0.styles.672f195a.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/front-code-guide/" class="home-link router-link-active"><img src="/front-code-guide/logo-h.png" alt="前端代码规范" class="logo"> <span class="site-name can-hide">前端代码规范</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/front-code-guide/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/front-code-guide/guide/name.html" class="nav-link">
+  命名规范
+</a></div><div class="nav-item"><a href="/front-code-guide/guide/html.html" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  HTML
+</a></div><div class="nav-item"><a href="/front-code-guide/guide/style.html" class="nav-link">
+  CSS/SCSS
+</a></div><div class="nav-item"><a href="/front-code-guide/guide/javascript.html" class="nav-link">
+  JavaScript
+</a></div><div class="nav-item"><a href="/front-code-guide/guide/git.html" class="nav-link">
+  Git
+</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/front-code-guide/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/front-code-guide/guide/name.html" class="nav-link">
+  命名规范
+</a></div><div class="nav-item"><a href="/front-code-guide/guide/html.html" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  HTML
+</a></div><div class="nav-item"><a href="/front-code-guide/guide/style.html" class="nav-link">
+  CSS/SCSS
+</a></div><div class="nav-item"><a href="/front-code-guide/guide/javascript.html" class="nav-link">
+  JavaScript
+</a></div><div class="nav-item"><a href="/front-code-guide/guide/git.html" class="nav-link">
+  Git
+</a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>语法</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/front-code-guide/guide/html.html#语法" class="sidebar-link">语法</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/front-code-guide/guide/html.html#属性顺序" class="sidebar-link">属性顺序</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/front-code-guide/guide/html.html#简写" class="sidebar-link">简写</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/front-code-guide/guide/html.html#插槽" class="sidebar-link">插槽</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/front-code-guide/guide/html.html#其他" class="sidebar-link">其他</a><ul class="sidebar-sub-headers"></ul></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h2 id="语法"><a href="#语法" class="header-anchor">#</a> 语法</h2> <p>在未来的技术框架规划中，会计划整合一套 eslint、自动格式化的基础环境，但在这之前应尽量遵循基本规范</p> <ul><li>缩进使用 <em><strong>（2个空格）</strong></em></li> <li>在属性上，使用 <em><strong>双引号</strong></em>，不要使用单引号</li> <li>属性名采用 <em><strong>“串式命名法”</strong></em> ，即：<em><strong>全小写，用中划线做分隔符</strong></em></li> <li>绑定的函数属性，应采用 <em><strong>串式命名</strong></em>，函数事件使用 <em><strong>小驼峰命名</strong></em>。</li></ul> <div class="language- extra-class"><pre class="language-text"><code>&lt;Button some-atter=&quot;someVar&quot;&gt;
+  按钮
+&lt;/Button&gt;
+
+&lt;Banner :data=&quot;bannerList&quot; limit-number=&quot;2&quot; @some-change=&quot;someChange&quot;/&gt;
+</code></pre></div><h2 id="属性顺序"><a href="#属性顺序" class="header-anchor">#</a> 属性顺序</h2> <p>属性应该按照特定的顺序出现以保证易读性</p> <ul><li><p>第一梯队，标识命名</p> <ul><li><code>class</code>、<code>id</code>、<code>ref</code></li> <li><code>class</code> 是为复用设计的，所以应处在第一位</li> <li><code>id</code> 作为标识应靠前，但是使用频率较 <code>class</code>  低，所以将它放在第二位</li> <li><code>ref</code> 同 <code>id</code>，通常情况两者只需要使用一种</li></ul></li> <li><p>第二梯队，常规属性</p> <ul><li><code>src，type，href，value...</code> 等</li> <li><code>readonly，disabled...</code> 等</li></ul></li> <li><p>第三梯队，业务逻辑性强</p> <ul><li><code>for、if、:style...</code> 等</li> <li><code>click，change，select，@some-custom...</code> 等</li></ul></li></ul> <div class="language- extra-class"><pre class="language-text"><code>&lt;div
+  class=&quot;list&quot;
+  id=&quot;listWrapper&quot;
+  ref=&quot;listRef&quot;
+&gt;
+  &lt;div
+    // 命名优先级最高
+    class=&quot;list-item&quot;
+
+    // 常规属性
+    :src=&quot;item.src&quot;
+    :type=&quot;item.type&quot;
+
+    // 逻辑相关
+    v-for=&quot;(item, i) in list&quot;
+    :key=item.id
+    @click=&quot;clickItem(item)&quot;
+  &gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre></div><h2 id="简写"><a href="#简写" class="header-anchor">#</a> 简写</h2> <p><code>boolean</code> 属性指不需要声明取值的属性，（ <em><strong>HTML5</strong></em> 并不需要）</p> <p><code>boolean</code> 属性的存在表示取值为 <code>true</code>，不存在则表示取值为 <code>false</code>。</p> <div class="language- extra-class"><pre class="language-text"><code>&lt;!-- 表示禁用 --&gt;
+&lt;Button disabled&gt;按钮&lt;/Button&gt;
+
+&lt;!-- 变量情况 --&gt;
+&lt;Button :disabled=&quot;disabled&quot;&gt;按钮&lt;/Button&gt;
+
+&lt;!-- 错误使用 --&gt;
+&lt;Button disabled=&quot;1&quot;&gt;按钮&lt;/Button&gt;
+</code></pre></div><h2 id="插槽"><a href="#插槽" class="header-anchor">#</a> 插槽</h2> <ul><li>尽量利用 <code>slot</code> 来完成基础文字等展示功能</li></ul> <div class="language- extra-class"><pre class="language-text"><code>&lt;!-- 应用部分 --&gt;
+&lt;Button&gt;按钮&lt;/Button&gt;
+
+&lt;!-- 组件部分 --&gt;
+&lt;div class=&quot;custom-button&quot;&gt;
+  &lt;slot&gt;&lt;/slot&gt;
+&lt;/div&gt;
+</code></pre></div><h2 id="其他"><a href="#其他" class="header-anchor">#</a> 其他</h2> <ul><li><em><strong>html</strong></em> 的编写设计思路应尽量遵循 <em><strong>文档流</strong></em></li> <li>避免过多的使用 <em><strong>定位</strong></em></li> <li>避免过多使用 <em><strong>固定宽、高</strong></em></li> <li>避免无意义的节点嵌套</li> <li><em><strong>实用性、扩展性</strong></em> 高于代码的 <em><strong>完美性</strong></em>（仅对强迫症程序员）</li></ul></div> <footer class="page-edit"><!----> <!----></footer> <!----> </main></div><div class="global-ui"></div></div>
+    <script src="/front-code-guide/assets/js/app.2f269a68.js" defer></script><script src="/front-code-guide/assets/js/2.faec8797.js" defer></script><script src="/front-code-guide/assets/js/8.ae937d46.js" defer></script>
+  </body>
+</html>

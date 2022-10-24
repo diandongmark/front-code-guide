@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>命名 | 前端代码规范</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    
+    <meta name="description" content="前端指导，代码规范">
+    
+    <link rel="preload" href="/front-code-guide/assets/css/0.styles.672f195a.css" as="style"><link rel="preload" href="/front-code-guide/assets/js/app.2f269a68.js" as="script"><link rel="preload" href="/front-code-guide/assets/js/2.faec8797.js" as="script"><link rel="preload" href="/front-code-guide/assets/js/11.e88db677.js" as="script"><link rel="prefetch" href="/front-code-guide/assets/js/10.74399594.js"><link rel="prefetch" href="/front-code-guide/assets/js/12.32bf4dca.js"><link rel="prefetch" href="/front-code-guide/assets/js/3.f1a138f4.js"><link rel="prefetch" href="/front-code-guide/assets/js/4.6507b1ee.js"><link rel="prefetch" href="/front-code-guide/assets/js/5.85f45329.js"><link rel="prefetch" href="/front-code-guide/assets/js/6.6b2cbcba.js"><link rel="prefetch" href="/front-code-guide/assets/js/7.2c177419.js"><link rel="prefetch" href="/front-code-guide/assets/js/8.ae937d46.js"><link rel="prefetch" href="/front-code-guide/assets/js/9.0ad13fa3.js">
+    <link rel="stylesheet" href="/front-code-guide/assets/css/0.styles.672f195a.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/front-code-guide/" class="home-link router-link-active"><img src="/front-code-guide/logo-h.png" alt="前端代码规范" class="logo"> <span class="site-name can-hide">前端代码规范</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/front-code-guide/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/front-code-guide/guide/name.html" class="nav-link">
+  命名规范
+</a></div><div class="nav-item"><a href="/front-code-guide/guide/html.html" class="nav-link">
+  HTML
+</a></div><div class="nav-item"><a href="/front-code-guide/guide/style.html" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  CSS/SCSS
+</a></div><div class="nav-item"><a href="/front-code-guide/guide/javascript.html" class="nav-link">
+  JavaScript
+</a></div><div class="nav-item"><a href="/front-code-guide/guide/git.html" class="nav-link">
+  Git
+</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/front-code-guide/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/front-code-guide/guide/name.html" class="nav-link">
+  命名规范
+</a></div><div class="nav-item"><a href="/front-code-guide/guide/html.html" class="nav-link">
+  HTML
+</a></div><div class="nav-item"><a href="/front-code-guide/guide/style.html" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  CSS/SCSS
+</a></div><div class="nav-item"><a href="/front-code-guide/guide/javascript.html" class="nav-link">
+  JavaScript
+</a></div><div class="nav-item"><a href="/front-code-guide/guide/git.html" class="nav-link">
+  Git
+</a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>命名</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/front-code-guide/guide/style.html#命名" class="sidebar-link">命名</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/front-code-guide/guide/style.html#注释" class="sidebar-link">注释</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/front-code-guide/guide/style.html#属性分组" class="sidebar-link">属性分组</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/front-code-guide/guide/style.html#简写" class="sidebar-link">简写</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/front-code-guide/guide/style.html#媒体查询" class="sidebar-link">媒体查询</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/front-code-guide/guide/style.html#scss-相关" class="sidebar-link">SCSS 相关</a><ul class="sidebar-sub-headers"></ul></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h2 id="命名"><a href="#命名" class="header-anchor">#</a> 命名</h2> <ul><li>类名使用 <em><strong>小写字母，以中划线分隔</strong></em></li></ul> <div class="language- extra-class"><pre class="language-text"><code>&lt;div class=&quot;some-header&quot;&gt;
+</code></pre></div><ul><li>id采用 <em><strong>驼峰式命名</strong></em></li></ul> <div class="language- extra-class"><pre class="language-text"><code>&lt;div class=&quot;someHeader&quot;&gt;
+</code></pre></div><ul><li><code>scss</code>中的 <em><strong>变量、混入采用驼峰式命名</strong></em></li></ul> <div class="language- extra-class"><pre class="language-text"><code>// 变量
+$fontSize: 24px;
+$lineHeight: 32px;
+
+.title {
+    font-size: $fontSize;
+    color: white;
+    line-height: $lineHeight;
+}
+
+// 混入
+@mixin flexBox($alignItems) {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: $alignItems;
+}
+
+.tabs {
+    width: 100%;
+    height: 300px;
+    @include flexBox;
+}
+</code></pre></div><h2 id="注释"><a href="#注释" class="header-anchor">#</a> 注释</h2> <ul><li>注释统一用 <code>/* */</code>（ <em><strong>scss</strong></em> 中也不要用<code>//</code>）</li> <li>缩进与下一行代码保持一致；</li></ul> <div class="language- extra-class"><pre class="language-text"><code>/* 头部导航 */
+.header {
+    ...
+}
+
+/* 内容区域 */
+.content {
+    ...
+}
+
+/* 底部公告 */
+.footer-ad {
+    ...
+}
+</code></pre></div><h2 id="属性分组"><a href="#属性分组" class="header-anchor">#</a> 属性分组</h2> <ul><li>属性推荐按照 <em><strong>关联性</strong></em> 进行分组</li> <li>不做强制性要求，但良好的书写习惯能保证易读</li></ul> <p>推荐的关联顺序：</p> <div class="language- extra-class"><pre class="language-text"><code>[
+    // 1 改变元素性质
+    display、float、visibility...
+
+    // 2 元素外层样式
+    list-style...
+
+    // 3 定位相关
+    position...
+
+    // 4 边距、宽、高
+    margin、padding...
+
+    // 5 字体相关
+    font、text...
+
+    // 6 颜色相关
+    color、background...
+
+    // 7 效果相关
+    opacity、box-shadow...
+
+    // 8 动画相关
+    transtion、animation...
+
+    // 9 交互相关
+    cursor、resize...
+]
+</code></pre></div><p>详细列举:</p> <div class="language- extra-class"><pre class="language-text"><code>[
+    [
+        &quot;display&quot;,
+        &quot;visibility&quot;,
+        &quot;float&quot;,
+        &quot;clear&quot;,
+        &quot;overflow&quot;,
+        &quot;clip&quot;,
+        &quot;zoom&quot;
+    ],
+    [
+        &quot;table-layout&quot;,
+        &quot;empty-cells&quot;,
+        &quot;caption-side&quot;,
+        &quot;border-spacing&quot;,
+        &quot;border-collapse&quot;,
+        &quot;list-style&quot;,
+    ],
+    [
+        &quot;position&quot;,
+        &quot;top&quot;,
+        &quot;right&quot;,
+        &quot;bottom&quot;,
+        &quot;left&quot;,
+        &quot;z-index&quot;
+    ],
+    [
+        &quot;margin&quot;,
+        &quot;margin-top&quot;,
+        &quot;margin-right&quot;,
+        &quot;margin-bottom&quot;,
+        &quot;margin-left&quot;,
+        &quot;box-sizing&quot;,
+        &quot;border&quot;,
+        &quot;border-width&quot;,
+        &quot;border-style&quot;,
+        &quot;border-color&quot;,
+        &quot;border-radius&quot;,
+        &quot;border-image&quot;,
+        &quot;padding&quot;,
+        &quot;width&quot;,
+        &quot;min-width&quot;,
+        &quot;max-width&quot;,
+        &quot;height&quot;,
+        &quot;min-height&quot;,
+        &quot;max-height&quot;
+    ],
+    [
+        &quot;font&quot;,
+        &quot;font-family&quot;,
+        &quot;font-size&quot;,
+        &quot;font-weight&quot;,
+        &quot;font-style&quot;,
+        &quot;font-variant&quot;,
+        &quot;line-height&quot;,
+        &quot;text-align&quot;,
+        &quot;vertical-align&quot;,
+        &quot;white-space&quot;,
+        &quot;text-decoration&quot;,
+        &quot;text-indent&quot;,
+        &quot;text-justify&quot;,
+        &quot;letter-spacing&quot;,
+        &quot;word-spacing&quot;,
+        &quot;text-outline&quot;,
+        &quot;text-transform&quot;,
+        &quot;text-wrap&quot;,
+        &quot;text-overflow&quot;,
+        &quot;text-overflow-ellipsis&quot;,
+        &quot;text-overflow-mode&quot;,
+        &quot;word-wrap&quot;,
+        &quot;word-break&quot;
+    ],
+    [
+        &quot;color&quot;,
+        &quot;background&quot;,
+        &quot;background-color&quot;,
+        &quot;background-image&quot;,
+        &quot;background-repeat&quot;,
+        &quot;background-attachment&quot;,
+        &quot;background-position&quot;,
+        &quot;background-clip&quot;,
+        &quot;background-origin&quot;,
+        &quot;background-size&quot;
+    ],
+    [
+        &quot;outline&quot;,
+        &quot;outline-width&quot;,
+        &quot;outline-style&quot;,
+        &quot;outline-color&quot;,
+        &quot;outline-offset&quot;,
+        &quot;opacity&quot;,
+        &quot;box-shadow&quot;,
+        &quot;text-shadow&quot;
+    ],
+    [
+        &quot;transition&quot;,
+        &quot;transition-delay&quot;,
+        &quot;transition-timing-function&quot;,
+        &quot;transition-duration&quot;,
+        &quot;transition-property&quot;,
+        &quot;transform&quot;,
+        &quot;transform-origin&quot;,
+        &quot;animation&quot;,
+        &quot;animation-name&quot;,
+        &quot;animation-duration&quot;,
+        &quot;animation-play-state&quot;,
+        &quot;animation-timing-function&quot;,
+        &quot;animation-delay&quot;,
+        &quot;animation-iteration-count&quot;,
+        &quot;animation-direction&quot;
+    ],
+    [
+        &quot;content&quot;,
+        &quot;quotes&quot;,
+        &quot;counter-reset&quot;,
+        &quot;counter-increment&quot;,
+        &quot;resize&quot;,
+        &quot;cursor&quot;,
+        &quot;tab-size&quot;,
+        &quot;hyphens&quot;,
+        &quot;pointer-events&quot;
+    ]
+]
+</code></pre></div><h2 id="简写"><a href="#简写" class="header-anchor">#</a> 简写</h2> <ul><li>分开书写样式可以提高代码易读性，但并不限制属性的简写</li> <li>可以通过 <code>scss</code> 的 <em><strong>继承、混入</strong></em> 等特性来加快工作效率，而非一味简写。</li></ul> <p>常见的属性简写：</p> <div class="language- extra-class"><pre class="language-text"><code>margin
+padding
+background
+font （不常见）
+transtion
+animation
+</code></pre></div><h2 id="媒体查询"><a href="#媒体查询" class="header-anchor">#</a> 媒体查询</h2> <ul><li>复杂度低
+<ul><li>尽量将媒体查询的样式规则写在原规则附近，避免过度拆分和放到文档底部。</li></ul></li> <li>复杂度高
+<ul><li>独立文件维护，同时将将原样式完全拷贝，在不需要更改的位置以 <code>{}</code> 代替，这样保留样式的结构关联性，方便理解。</li></ul> <div class="language- extra-class"><pre class="language-text"><code>.header {
+  some-style...
+
+  .card {
+      some-style...
+  }
+
+  .header-left {
+      some-style...
+  }
+}
+
+// 独立维护媒体查询
+// some.scss
+@media screen and (max-width: 1200px) {
+  .header {
+    // 卡片样式
+    .card {} // 即使不需要修改，也要加上空样式以及注释，保证代码的连续性
+    .header-left {
+      width: 600px;
+    }
+  }
+}
+</code></pre></div></li></ul> <h2 id="scss-相关"><a href="#scss-相关" class="header-anchor">#</a> SCSS 相关</h2> <p>计划在未来中设计一套全局变量环境，但在这之前应遵循基本的使用规范：</p> <ul><li>变量：重复性数值，尽量用变量代替</li> <li>嵌套：嵌套规则不宜过长，可按照功能模块进行结构划分</li></ul> <div class="language- extra-class"><pre class="language-text"><code>&lt;div class=&quot;header-wrapper&quot;&gt;
+    &lt;!-- 养成注释的好习惯 --&gt;
+    &lt;div class=&quot;header&quot;&gt;
+        &lt;!-- 养成注释的好习惯 --&gt;
+        &lt;div class=&quot;inner-layout&quot;&gt;
+            &lt;!-- 养成注释的好习惯 --&gt;
+            &lt;div class=&quot;title&quot;&gt;
+                &lt;div class=&quot;title-text&quot;&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+// 正确的示例
+.header-wrapper {
+    /* 养成注释的好习惯 */
+    .header {}
+    /* 养成注释的好习惯 */
+    .inner-layout {}
+    /* 养成注释的好习惯 */
+    .title {
+        .title-text {}
+    }
+}
+
+// 错误的示例
+.header-wrapper {
+    .header {
+        .inner-layout {
+            .title {
+                .title-text{}
+            }
+        }
+    }
+}
+</code></pre></div><ul><li>计算：在复杂的计算逻辑中，应做出详细的注释说明</li></ul> <div class="language- extra-class"><pre class="language-text"><code>.card-container {
+    width: 100%;
+    height: 60px;
+    top: 60px + 40px + 72px + 28px; // 此处应该加上注释
+
+    /**
+     * 卡片高度距离，需要加上定位、和搜索栏、标题
+     * 60自身高度 + 40定位 + 72顶部搜索栏 + 28标题 // 此处仅模拟
+     */
+    top: 60px + 40px + 72px + 28px;
+}
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <!----> </main></div><div class="global-ui"></div></div>
+    <script src="/front-code-guide/assets/js/app.2f269a68.js" defer></script><script src="/front-code-guide/assets/js/2.faec8797.js" defer></script><script src="/front-code-guide/assets/js/11.e88db677.js" defer></script>
+  </body>
+</html>

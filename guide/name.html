@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>命名方式 | 前端代码规范</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    
+    <meta name="description" content="前端指导，代码规范">
+    
+    <link rel="preload" href="/front-code-guide/assets/css/0.styles.672f195a.css" as="style"><link rel="preload" href="/front-code-guide/assets/js/app.2f269a68.js" as="script"><link rel="preload" href="/front-code-guide/assets/js/2.faec8797.js" as="script"><link rel="preload" href="/front-code-guide/assets/js/10.74399594.js" as="script"><link rel="prefetch" href="/front-code-guide/assets/js/11.e88db677.js"><link rel="prefetch" href="/front-code-guide/assets/js/12.32bf4dca.js"><link rel="prefetch" href="/front-code-guide/assets/js/3.f1a138f4.js"><link rel="prefetch" href="/front-code-guide/assets/js/4.6507b1ee.js"><link rel="prefetch" href="/front-code-guide/assets/js/5.85f45329.js"><link rel="prefetch" href="/front-code-guide/assets/js/6.6b2cbcba.js"><link rel="prefetch" href="/front-code-guide/assets/js/7.2c177419.js"><link rel="prefetch" href="/front-code-guide/assets/js/8.ae937d46.js"><link rel="prefetch" href="/front-code-guide/assets/js/9.0ad13fa3.js">
+    <link rel="stylesheet" href="/front-code-guide/assets/css/0.styles.672f195a.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/front-code-guide/" class="home-link router-link-active"><img src="/front-code-guide/logo-h.png" alt="前端代码规范" class="logo"> <span class="site-name can-hide">前端代码规范</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/front-code-guide/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/front-code-guide/guide/name.html" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  命名规范
+</a></div><div class="nav-item"><a href="/front-code-guide/guide/html.html" class="nav-link">
+  HTML
+</a></div><div class="nav-item"><a href="/front-code-guide/guide/style.html" class="nav-link">
+  CSS/SCSS
+</a></div><div class="nav-item"><a href="/front-code-guide/guide/javascript.html" class="nav-link">
+  JavaScript
+</a></div><div class="nav-item"><a href="/front-code-guide/guide/git.html" class="nav-link">
+  Git
+</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/front-code-guide/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/front-code-guide/guide/name.html" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  命名规范
+</a></div><div class="nav-item"><a href="/front-code-guide/guide/html.html" class="nav-link">
+  HTML
+</a></div><div class="nav-item"><a href="/front-code-guide/guide/style.html" class="nav-link">
+  CSS/SCSS
+</a></div><div class="nav-item"><a href="/front-code-guide/guide/javascript.html" class="nav-link">
+  JavaScript
+</a></div><div class="nav-item"><a href="/front-code-guide/guide/git.html" class="nav-link">
+  Git
+</a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>命名方式</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/front-code-guide/guide/name.html#命名方式" class="sidebar-link">命名方式</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/front-code-guide/guide/name.html#其他约定命名" class="sidebar-link">其他约定命名</a></li></ul></li><li><a href="/front-code-guide/guide/name.html#项目命名" class="sidebar-link">项目命名</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/front-code-guide/guide/name.html#规则" class="sidebar-link">规则</a></li></ul></li><li><a href="/front-code-guide/guide/name.html#文件、目录命名" class="sidebar-link">文件、目录命名</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/front-code-guide/guide/name.html#目录命名" class="sidebar-link">目录命名</a></li><li class="sidebar-sub-header"><a href="/front-code-guide/guide/name.html#文件命名" class="sidebar-link">文件命名</a></li><li class="sidebar-sub-header"><a href="/front-code-guide/guide/name.html#组件命名" class="sidebar-link">组件命名</a></li><li class="sidebar-sub-header"><a href="/front-code-guide/guide/name.html#资源命名" class="sidebar-link">资源命名</a></li></ul></li><li><a href="/front-code-guide/guide/name.html#目录的划分" class="sidebar-link">目录的划分</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/front-code-guide/guide/name.html#全局分配" class="sidebar-link">全局分配</a></li><li class="sidebar-sub-header"><a href="/front-code-guide/guide/name.html#就近原则" class="sidebar-link">就近原则</a></li></ul></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h2 id="命名方式"><a href="#命名方式" class="header-anchor">#</a> 命名方式</h2> <ul><li><p>串式命名法</p> <p>即 <em><strong>小写英文</strong></em>、<em><strong>中划线</strong></em> 。</p> <div class="language- extra-class"><pre class="language-text"><code>home-banner
+home-slider
+shop // 商城页
+shop-detail // 商品-详情
+</code></pre></div></li> <li><p>大驼峰命名法</p> <p>即开头 <em><strong>首字母大写</strong></em>，后面接的 <em><strong>动作名称、语义名称</strong></em> 首字母均 <em><strong>大写</strong></em>。</p> <div class="language- extra-class"><pre class="language-text"><code>Button // 按钮
+Icon // 图标111
+Swiper
+</code></pre></div></li> <li><p>小驼峰命名法</p> <p>即开头 <em><strong>首字母小写</strong></em>，后面接的 <em><strong>动作名称、语义名称</strong></em> 首字母均 <em><strong>大写</strong></em>。</p> <div class="language- extra-class"><pre class="language-text"><code>listConfig // 列表、配置
+tabList // 选项卡、列表
+tabAct // 选项卡、选中｜激活
+</code></pre></div></li></ul> <h3 id="其他约定命名"><a href="#其他约定命名" class="header-anchor">#</a> 其他约定命名</h3> <p>其他特殊情况下，自行约定后的命名规范。</p> <ul><li><p>全局命名</p> <p>即 <code>$</code> 开头的小驼峰格式，以 <em><strong>Vue</strong></em> 为例，在添加全局公用属性、方法时适用。</p> <div class="language- extra-class"><pre class="language-text"><code>$baseUrl // Vue 下挂载的基础地址
+$env // Vue 下挂载的环境信息
+</code></pre></div></li> <li><p>其他命名</p> <p>在实际情况中，会有需要跟其他对象、参数合并的类似情况，为尽量避免冲突</p> <p>现约定以 <code>_</code> 开头的小驼峰格式来区分，实际使用根据自身代码情况斟酌。</p> <div class="language- extra-class"><pre class="language-text"><code>// 不知配置的情况下
+import config from 'config'
+const someItem = {
+  ...config,
+  _selectIndex: 0
+}
+
+// 参数冲突的情况下
+someMonted(item) {
+  console.log('click:', item)
+  this.$emit('clickComponent', {
+    ...item,
+    _name: 'some' + item.name
+  })
+}
+</code></pre></div></li></ul> <h2 id="项目命名"><a href="#项目命名" class="header-anchor">#</a> 项目命名</h2> <p>规范的项目命名，不仅美观同时也利于阅读理解、分析查找。</p> <h3 id="规则"><a href="#规则" class="header-anchor">#</a> 规则</h3> <ul><li>全部采用 <em><strong>“串式命名法”</strong></em> ，即：<em><strong>英文小写 + “-”</strong></em> 链接符号组成。</li> <li>命名应以 <em><strong>“项目英文名称” - “项目类型的顺序组成”</strong></em> 。</li></ul> <div class="language- extra-class"><pre class="language-text"><code>name-h5 // 项目名-移动端
+name-admin // 项目名-管理端
+</code></pre></div><h4 id="项目类型说明"><a href="#项目类型说明" class="header-anchor">#</a> 项目类型说明</h4> <div class="language- extra-class"><pre class="language-text"><code>-pc // 电脑端 web 项目
+-h5 // 移动端 web 项目
+-admin // 管理端 web 项目
+-uni // uni项目
+-other // 其他项目
+</code></pre></div><div class="language- extra-class"><pre class="language-text"><code>/**
+ * uniapp 可开发多平台项目，所以 uni 即代表：小程序、H5、App
+ * 具体项目类型，应在 git 项目说明中详细描述
+ */
+</code></pre></div><h2 id="文件、目录命名"><a href="#文件、目录命名" class="header-anchor">#</a> 文件、目录命名</h2> <h3 id="目录命名"><a href="#目录命名" class="header-anchor">#</a> 目录命名</h3> <ul><li>目录的命名采用 <em><strong>“串式命名法”</strong></em> 。</li> <li>命名应语义化、<em><strong>简洁、明确</strong></em> 。</li></ul> <div class="language- extra-class"><pre class="language-text"><code>home // 首页模块文件夹
+shop // 商城模块文件夹
+user // 个人中心模块
+</code></pre></div><h3 id="文件命名"><a href="#文件命名" class="header-anchor">#</a> 文件命名</h3> <ul><li>文件的命名采用 <em><strong>“串式命名法”</strong></em> 。</li> <li>命名应语义化，在保证描述 <em><strong>精准、清晰</strong></em> 的前提下，尽量简洁。
+<ul><li>首页、单独 <em><strong>JS</strong></em> 均应命名为 <code>index</code></li></ul></li></ul> <div class="language- extra-class"><pre class="language-text"><code>home
+  - index.vue // 首页
+  - search.vue // 搜索页
+
+shop
+  - index.vue // 商城首页
+  - detail.vue // 详情页
+
+user
+  - index.vue // 个人中心首页
+  - integral.vue // 积分页
+  - integral-detail.vue // 积分商品-详情
+</code></pre></div><h3 id="组件命名"><a href="#组件命名" class="header-anchor">#</a> 组件命名</h3> <ul><li>组件的命名采用 <em><strong>“大驼峰命名法”</strong></em> 。</li> <li>命名应语义化，采用简略、清晰的命名。</li></ul> <div class="language- extra-class"><pre class="language-text"><code>components
+  - Some // 组件文件夹
+    - index.vue
+    - index.scss
+    - img
+      - some.png
+      ...
+</code></pre></div><h3 id="资源命名"><a href="#资源命名" class="header-anchor">#</a> 资源命名</h3> <ul><li>资源的命名采用 <em><strong>“串式命名法”</strong></em></li> <li>资源命名应遵循一定的前缀词，增强可读性。
+<ul><li>资源词缀例举：
+<ul><li>根据类型划分：<code>img-</code> <code>icon-</code></li> <li>根据页面划分：<code>home-</code> <code>home-icon-</code></li> <li>根据功能划分： <code>nav-</code> <code>menu-</code></li></ul></li></ul></li></ul> <h2 id="目录的划分"><a href="#目录的划分" class="header-anchor">#</a> 目录的划分</h2> <p>采用技术框架的不同，结构目录会有些许差异，但是层级结构相仿。实际开发中应保持 <em><strong>所使用技术框架</strong></em> 的设计思路。</p> <p>本文讲述的为业务逻辑下目录结构的设计，主要遵循 2个策略：<code>“全局分配，就近原则”</code></p> <h3 id="全局分配"><a href="#全局分配" class="header-anchor">#</a> 全局分配</h3> <ul><li>所有涉及多次复用的 <em><strong>依赖、插件、资源、API</strong></em> 等等都应放置在顶层目录 <code>src/</code> 下，对应的目录。</li> <li>所有业务代码结构，都应按照模块结构创建目录。</li></ul> <div class="language- extra-class"><pre class="language-text"><code>// 例举（以下仅列举部分，assets... 等其他未列举的都应遵循这一规范）
+project/src
+  - api
+    - app.js // 存放公共相关接口等...
+    // 业务体量大时，应按照页面目录模块建立对应接口
+    - home.js
+    - shop.js
+    - user.js
+  - assets
+  - compoents // 涉及复用、通用性强的组件
+    - Button
+    - Icon
+    - Loading
+    - Title
+  - store
+  - views
+
+</code></pre></div><h3 id="就近原则"><a href="#就近原则" class="header-anchor">#</a> 就近原则</h3> <p>业务逻辑相关的组件，应放置在当前页面对应的目录下。</p> <div class="language- extra-class"><pre class="language-text"><code>project/src/views
+
+views
+  - home
+    index // 首页
+      HeaderTitle.vue // 首页标题组件
+      Icon.vue // 首页图标
+    search // 搜索
+      List.vue // 列表组件
+    index.vue
+    search.vue
+  - shop 
+  - user
+  ...
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <!----> </main></div><div class="global-ui"></div></div>
+    <script src="/front-code-guide/assets/js/app.2f269a68.js" defer></script><script src="/front-code-guide/assets/js/2.faec8797.js" defer></script><script src="/front-code-guide/assets/js/10.74399594.js" defer></script>
+  </body>
+</html>
